@@ -14,14 +14,14 @@ DIR_PATH = sys.argv[3]
 FILE_NAME = sys.argv[4]
 
 def windows_path_to_wsl(windows_path):
-    # Reemplaza los backslashes con slashes
+    # Replaces backslashes with slashes
     path = windows_path.replace('\\', '/')
 
-    # Divide la ruta en partes
+    # Divides the route in parts
     parts = path.split(':')
 
-    # Reemplaza la letra de la unidad por su equivalente en WSL y devuelve la nueva ruta
-    # Por ejemplo, la ruta C:\Users\principal\Downloads\files, se traduciría en WSL como 
+    # Replaces the drive letter with its equivalent in WSL and returns the new path
+    # For example, the path 'C:\Users\principal\Downloads\files', would be translated in WSL as 
     # /mnt/c/Users/principal/Downloads/files.
     return '/mnt/{}/{}'.format(parts[0].lower(), parts[1])
 

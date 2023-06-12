@@ -28,7 +28,7 @@ class SharePoint:
     
     def _get_files_list(self, folder_name):
         conn = self._auth()
-        # Obtiene la lista de archivos de la biblioteca
+        # Gets the list of files in the Sharepoint library
         target_folder_url = f'{SHAREPOINT_DOC_LIBRARY}/{folder_name}'
         root_folder = conn.web.get_folder_by_server_relative_url(target_folder_url)
         root_folder.expand(["Files", "Folders"]).get().execute_query()
