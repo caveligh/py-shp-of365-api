@@ -36,4 +36,4 @@ Install Packages
 
 Install Office365 API Package Directly from Github
 ```bash
-  pip install git+https://github.com/vgrem/Office365-REST-Python-Client.git#egg=Office365-REST-Python-Client
+  pip install git+https://github.com/caveligh/py-shp-of365-api.git#egg=py-shp-of365-api
