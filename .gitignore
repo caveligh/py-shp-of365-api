@@ -4,3 +4,5 @@ __*
 examples/prueba.py
 examples/subir.py
 examples/descarga.py
+*.tar
+log.txt
